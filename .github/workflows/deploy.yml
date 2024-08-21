@@ -3,13 +3,13 @@ name: 批量保活进程
 on:
   schedule:
     # 使用cron表达式定义任务运行的时间
-    - cron: '*/10 * * * *'
+    - cron: '*/120 * * * *'
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#onschedule
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

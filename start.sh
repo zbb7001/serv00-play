@@ -309,7 +309,7 @@ createConfigFile(){
 
 
   read -p "配置保活检查的时间间隔(单位分钟，默认5分钟):" tm
-	tm=${tm:-"5"}
+	tm=${tm:-"120"}
 	cd ${installpath}/serv00-play/
 	
 	json_content="{\n"
